@@ -38,7 +38,7 @@ app.post("/create-order", async (req, res) => {
     console.log(error);
     res
       .status(500)
-      .json({ msg: "Internal Server Error", error: error.message });
+      .json({ msg: "Internal Server Error", err: error.message });
   }
 });
 
